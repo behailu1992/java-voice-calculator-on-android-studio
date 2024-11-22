@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:ignore="ExtraText"
+    android:background="@drawable/pexels">
+    <ImageView
+        android:id="@+id/mic_speak_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:contentDescription="Microphone Icon"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_microphone_foreground"
+        app:tint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/speak_output_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mic_speak_iv"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Lets do Maths..."
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+</RelativeLayout>
